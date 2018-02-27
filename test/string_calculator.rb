@@ -10,6 +10,10 @@ class Calculator
     digits.inject(:+)
   end
 
+  def multiply
+    digits.inject(:*)
+  end
+
   private
   def parse_input(digits_string)
     digits_string.split(',').map {|n| n.to_i}
